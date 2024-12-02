@@ -1,0 +1,21 @@
+.smallNewsSkeleton {
+  height: 190px;
+  width: calc(25% - 20px);
+}
+
+.bigNewsSkeleton {
+  height: 400px;
+  width: calc(50% - 10px);
+}
+
+@media (max-width: 820px) {
+
+  .smallNewsSkeleton,
+  .bigNewsSkeleton {
+    width: 100%;
+  }
+
+  .bigNewsSkeleton {
+    height: 190px;
+  }
+}

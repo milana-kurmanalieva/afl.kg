@@ -1,0 +1,180 @@
+.fieldDetails {
+  width: 33%;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 12px;
+  border: 2px solid var(--blue-light);
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.08);
+  font-size: 20px;
+  font-style: normal;
+  line-height: 120%;
+  color: var(--black);
+
+  .title {
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    font-weight: 600;
+
+    .info {
+      color: var(--disabled-gray);
+      font-weight: 400;
+    }
+  }
+
+  .fields {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0 12px;
+  }
+
+  .prices {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 12px;
+
+    .priceInfo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .hour {
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      .price {
+        font-size: 29px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+      }
+    }
+  }
+
+  .btnField {
+    width: calc(50% - 16px / 2);
+  }
+
+  .btnDesktop {
+    margin-top: 12px;
+    display: flex;
+    width: 100%;
+    padding: 12px;
+    font-size: 20px !important;
+  }
+
+  .btnMobile {
+    margin-top: 12px;
+    font-size: 20px !important;
+  }
+}
+
+.showPhones {
+  display: flex;
+  margin: 32px 0 32px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+
+  .phone {
+    margin-right: 28px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  a {
+    color: #000 !important;
+  }
+}
+
+.mobileBlock {
+  display: none;
+  padding: 0;
+}
+
+.desktopBlock {
+  width: 100%;
+  padding: 0 12px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 820px) {
+  .fieldDetails {
+    width: 100%;
+    gap: 12px;
+    font-size: 16px;
+    border: none;
+    padding: 0;
+    margin-top: 16px;
+  }
+  .hour {
+    font-size: 16px !important;
+  }
+
+  .priceInfo {
+    .price {
+      font-size: 22px !important;
+    }
+  }
+  .fields {
+    order: 1;
+  }
+  .type {
+    order: 2;
+  }
+  .numberFields {
+    order: 3;
+  }
+  .address {
+    order: 4;
+  }
+  .price {
+    order: 5;
+  }
+  .prices {
+    order: 6;
+  }
+  .btnMobile {
+    width: 100%;
+    font-size: 16px !important;
+  }
+  .mobileBlock {
+    display: block !important;
+    width: calc(100% - 24px);
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 90;
+  }
+
+  .desktopBlock {
+    display: none;
+  }
+  .modal {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%) !important;
+  }
+}

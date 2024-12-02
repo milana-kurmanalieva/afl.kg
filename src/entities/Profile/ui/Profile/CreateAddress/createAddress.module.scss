@@ -1,0 +1,36 @@
+.modal {
+
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+  column-gap: 24px;
+}
+
+.select {
+  min-width: 350px;
+  & div:first-child {
+    padding: 8px ;
+    border-radius: 8px;
+  }
+
+  &>div {
+    background-color:#F5F5F5 !important;
+  }
+}
+
+@media (max-width: 820px) {
+  .input {
+    flex-direction: column;
+    row-gap: 4px;
+    align-items: flex-start;
+  }
+
+  .select {
+    min-width: auto;
+    width: 100% !important;
+  }
+}

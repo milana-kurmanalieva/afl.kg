@@ -1,0 +1,66 @@
+.winnerCard {
+  max-width: 416px;
+  padding: 24px;
+  border-radius: 16px;
+  gap: 16px;
+  flex: 1;
+}
+
+.teamLogo {
+  width: 272px;
+  height: 272px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 24px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+  }
+}
+
+.winnerPoints {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.point {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.winnersName {
+  margin-top: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #00000033;
+  h5 {
+    font-size: 24px !important;
+    font-weight: 600 !important;
+  }
+}
+
+.label {
+  font-weight: 800 !important;
+}
+
+.value {
+  font-weight: 400 !important;
+
+}
+
+.thirdPlace {
+  background: linear-gradient(136.54deg, #EF9441 0.09%, #FCA985 23.58%, #FFDDC4 51.06%, #E68C4B 72.05%, #CB6134 100.04%);
+}
+
+.secondPlace {
+  background: linear-gradient(136.54deg, #CBCBCB 0.09%, #E6E6E6 30.47%, #FFFFFF 51.06%, #D6D6D6 72.05%, #9A9A9A 100.04%);
+}
+
+.firstPlace {
+  background: linear-gradient(136.54deg, #FFD467 0.09%, #FFEFB4 23.58%, #FFF7E2 51.06%, #F3D790 72.05%, #D9A14C 100.04%);
+}

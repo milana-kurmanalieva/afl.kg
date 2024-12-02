@@ -1,0 +1,62 @@
+.inputContainer {
+  position: relative;
+  min-width: 350px;
+  background-color: var(--form-white);
+  border: 1px solid var(--form-white);
+  border-radius: 8px;
+  padding: 14px 8px;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  margin-bottom: 10px;
+
+  .input {
+    width: 100%;
+    background-color: inherit;
+    font-size: 16px;
+  }
+
+  .input::placeholder {
+    font-size: inherit;
+    color: var(--gray-light);
+  }
+}
+
+.input[type=number]:hover {
+  cursor: default !important;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.errorContainer {
+  border: 1px solid #F41414;
+}
+
+.error {
+  color: #F41414;
+
+  &::placeholder {
+    color: #F41414;
+  }
+}
+
+.arrow input[type=number]::-webkit-inner-spin-button,
+.arrow input[type=number]::-webkit-outer-spin-button {
+  pointer-events: auto !important;
+}
+
+
+.eye {
+  cursor: pointer;
+}
+
+@media (max-width: 820px) {
+  .inputContainer {
+    min-width: auto;
+    width: 100%;
+  }
+}

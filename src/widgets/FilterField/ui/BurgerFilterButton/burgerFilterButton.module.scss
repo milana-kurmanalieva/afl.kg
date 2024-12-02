@@ -1,0 +1,61 @@
+.burgerButton {
+  background-color: #FFFFFF;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 99;
+  width: 100%;
+}
+
+.burger {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.close {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: #181818;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.btn {
+  background: none;
+  border: none;
+  outline: none;
+  color: #002B6B;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+@media (max-width: 820px) {
+  .close {
+    padding: 16px;
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 101;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .title {
+      font-size: 20px;
+    }
+    .image {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

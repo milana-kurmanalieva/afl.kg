@@ -1,0 +1,302 @@
+.preview {
+  --form-white: #FFF;
+}
+
+.disabledLabel {
+  color: var(--gray-light) !important;
+}
+
+.fileInput {
+  display: none;
+}
+
+.addPhotoContainer {
+  display: flex;
+  gap: 15px;
+}
+
+.photoContainer {
+  width: 100%;
+  height: 100%;
+}
+
+
+.removePhoto {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+  background-color: #F8F8FB;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.blockNewPhoto {
+  width: 500px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.previewImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.caption {
+  color: #9E9E9E;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.photoDesc {
+  color: #9E9E9E;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 12px;
+}
+
+.mainPhotoIcon {
+  margin-top: 20px;
+}
+
+.textareaLabel {
+  font-size: 20px !important;
+}
+
+.addPhotoNew {
+  width: 155px;
+  height: 110px;
+  border-radius: 4px;
+  background-color: #F8F8FB;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  position: relative
+}
+
+.photoIcon {
+  width: 43px;
+  margin-top: 20px;
+}
+
+.photoAdd {
+  color: #686868;
+  font-size: 13px;
+}
+
+.addPhoto {
+  border-radius: 8px;
+  width: 315px;
+  height: 240px;
+  background-color: #F8F8FB;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  position: relative;
+
+}
+
+.photoLabel {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.data {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 100%;
+}
+
+.image {
+  margin-top: 8px;
+  display: inline-block;
+  padding: 50px 90px;
+  background-color: #F8F8FB;
+  width: 300px;
+  height: 240px;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.deletePhoto {
+  background-color: #F8F8FB;
+  padding: 5px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.fileLabel {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+
+  p {
+    text-align: center;
+    margin-top: 8px;
+  }
+}
+
+.selectedPhoto {
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.emptyImage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.descriptionArea {
+  margin-top: 8px;
+  background-color: var(--form-white);
+  border-radius: 8px;
+  min-width: 100%;
+  resize: vertical;
+  min-height: 180px;
+  max-height: 300px;
+  padding: 14px 8px;
+  &::placeholder {
+    font-size: 16px;
+    color: var(--gray-light) !important;
+  }
+}
+
+.charCounter {
+  display: flex;
+  justify-content: flex-end;
+  color: #9E9E9E;
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.addresses {
+  display: flex;
+  flex-direction: column;
+  row-gap: 45px;
+}
+
+.addShopAddress {
+  margin-top: 40px;
+}
+
+.brand {
+  width: 402px;
+  height: 56px;
+  margin-bottom: 20px;
+
+  >div {
+    height: 100%;
+  }
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selectPodCategory {
+  width: 402px;
+  p {
+        margin-bottom: 8px;
+  }
+
+  >div {
+    max-width: 400px;
+    &>div {
+      padding-top: 16px !important;
+      background-color: var(--form-white) !important;
+      border-radius: 8px !important;
+    }
+  }
+}
+
+.selectCategory {
+  width: 402px;
+  p {
+    margin-bottom: 8px;
+  }
+
+  >div {
+    max-width: 400px;
+    &>div {
+      padding-top: 16px !important;
+      background-color: var(--form-white) !important;
+      // border-radius: 8px !important;
+    }
+  }
+}
+
+.helperAddPhoto {
+  color: #9E9E9E;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.photoLabelNone {
+  display: none !important;
+}
+
+@media (max-width: 820px) {
+
+  .addPhotoContainer {
+    gap: 25px;
+    flex-direction: column;
+  }
+
+  .addPhoto {
+    width: 100%;
+    height: 170px;
+  }
+
+  .blockNewPhoto {
+    width: auto;
+  }
+
+  .photoIcon {
+    margin-top: 30px;
+  }
+
+  .photoDesc {
+    display: none;
+  }
+
+  .mainPhotoIcon {
+    margin-top: 40px;
+    width: 58px;
+  }
+
+  .addPhotoNew {
+    width: 48%;
+    height: 125px;
+  }
+
+  .categories {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

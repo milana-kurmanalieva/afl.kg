@@ -1,0 +1,16 @@
+.up, .down, .left, .right {
+  display: inline-block;
+  transition: transform .3s ease;
+}
+
+.up {
+  transform: rotate(180deg) translateY(-3px);
+}
+
+.left {
+  transform: rotate(90deg);
+}
+
+.right {
+  transform: rotate(-90deg);
+}

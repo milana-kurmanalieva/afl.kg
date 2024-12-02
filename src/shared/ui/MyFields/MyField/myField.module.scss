@@ -1,0 +1,119 @@
+.address {
+  overflow: hidden;
+  cursor: pointer;
+
+  a {
+    color: var(--black);
+  }
+
+  .addressInfo {
+    display: flex;
+  }
+
+  .number {
+    width: 25px;
+    font-weight: 700;
+  }
+
+  .title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 24px;
+  }
+
+  button {
+    padding: 8px 16px !important;
+  }
+
+  .addressTitle {
+    display: flex;
+    column-gap: 24px;
+  }
+}
+
+.buttons {
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
+
+  button {
+    padding: 4px 8px !important;
+    margin-right: 0 !important;
+  }
+}
+
+.buttons {
+  margin-right: 32px;
+}
+
+.fields {
+  width: 100%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+
+  .number {
+    width: 175px;
+  }
+}
+
+.fieldInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fieldTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.addressName, .name {
+  width: 180px;
+}
+
+
+@media (max-width: 820px) {
+  .changeButton {
+    margin-right: 0;
+  }
+
+  .buttons {
+    margin-right: 0;
+  }
+
+  .addressName, .name {
+      width: auto;
+  }
+
+  .address {
+    padding: 16px 0;
+
+    .addressInfo {
+      flex-direction: column;
+      row-gap: 12px;
+    }
+
+    .number {
+      display: none;
+    }
+
+    .name {
+      font-weight: 500;
+    }
+
+    .title {
+      display: flex;
+      column-gap: 24px;
+    }
+  }
+
+  .fields {
+    margin-left: 0;
+  }
+}

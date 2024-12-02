@@ -1,0 +1,20 @@
+.main {
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
+  width: 197px;
+  height: 129px;
+
+  img {
+    object-fit: contain;
+    border-radius: 8px;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 820px) {
+  .main {
+    width: calc(50% - 7.5px);
+    height: 120px;
+  }
+}

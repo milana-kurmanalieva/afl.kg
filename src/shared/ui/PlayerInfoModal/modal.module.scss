@@ -1,0 +1,178 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 110;
+  transition: .5s linear;
+}
+
+.modalActive {
+  background-color: rgba(266, 266, 266, .4);
+}
+
+.content {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: var(--white);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
+  height: 100vh;
+  min-width: 400px;
+  width: 23vw;
+  z-index: 120;
+  overflow-y: scroll;
+}
+
+.playerBg {
+  width: 100%;
+  position: absolute;
+}
+
+.summary {
+  padding: 20px;
+}
+
+.closeIcon {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.avatar {
+  position: relative;
+  margin-top: 50px;
+  text-align: center;
+  z-index: 22;
+
+  .avatarImage {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    object-position: top;
+  }
+
+  .name {
+    font-size: 25px;
+    margin: 30px 0;
+  }
+}
+
+.stats {
+  ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .value {
+    color: var(--black);
+    opacity: .7;
+  }
+
+  .value, .label {
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+.statistic {
+  .seasonLabel {
+    margin: 16px 0 20px;
+    font-size: 20px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    align-items: center;
+  }
+
+  .label, .value {
+    font-size: 20px;
+  }
+}
+
+.select {
+  margin: 16px 0;
+
+  &>div {
+    width: 100%;
+  }
+}
+
+@media (max-height: 800px) {
+  .avatar {
+    .name {
+      font-size: 20px;
+    }
+  }
+
+  .avatarImage {
+    width: 100px;
+    height: 100px;
+  }
+
+  .statistic {
+    .seasonLabel {
+      margin: 30px 0 18px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .label,
+    .value {
+      font-size: 16px;
+    }
+  }
+}
+
+
+@media (max-width: 820px) {
+  .content {
+    min-width: auto;
+    width: 100vw;
+  }
+
+  .avatarImage {
+    width: 100px;
+    height: 100px;
+  }
+
+  .avatar {
+    .name {
+      font-size: 20px;
+    }
+  }
+
+  .statistic {
+    .seasonLabel {
+      margin: 30px 0 18px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .label, .value {
+      font-size: 16px;
+    }
+  }
+}

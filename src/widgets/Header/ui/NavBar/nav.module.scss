@@ -1,0 +1,28 @@
+.navigationList {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  column-gap: 24px;
+}
+
+.linkBlock {
+  padding: 8px 16px 23px;
+}
+
+.link {
+  font-size: 18px;
+  color: #021F4B;
+}
+
+@media (max-width: 1280px) {
+  .navigationList {
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 820px) {
+  .navigationList {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

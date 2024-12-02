@@ -1,0 +1,25 @@
+.main {
+  padding: 24px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F5F5F5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+
+  span {
+    display: block;
+    margin: 0 16px 0 8px;
+    max-width: 309px;
+    width: 100%;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--black);
+  }
+
+  &:hover {
+    background: #E6E9F6;
+  }
+}

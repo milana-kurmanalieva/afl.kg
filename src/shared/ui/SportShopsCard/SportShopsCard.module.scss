@@ -1,0 +1,58 @@
+.card {
+  width: 307px;
+  height: 190px;
+  background-image: url('../../assets/images/shops_card_photo.png');
+  cursor: pointer;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & .cardText {
+    margin: 40px 0 0 40px;
+
+    p {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20px;
+      color: var(--white);
+    }
+  
+    h4 {
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 29px;
+      color: var(--white);
+    }
+  }
+
+
+  .cardLinks {
+    display: flex;
+    align-items: center;
+    height: 10px;
+    width: 100%;
+    gap: 6px;
+    justify-content: flex-end;
+
+    button {
+      color: var(--black);    
+      background: none;
+    }
+    
+    img {
+      width: 20px;
+      height: 100%;
+    }
+  }
+
+}
+
+@media (max-width: 700px) {
+   .card {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   }
+}

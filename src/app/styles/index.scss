@@ -1,0 +1,30 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+:root {
+  --black: #181818;
+  --black-mid: #222;
+  --black-light: #333;
+  --gray: #3b3b3b;
+  --gray-mid: #565656;
+  --gray-light: #9E9E9E;
+  --gray-extra-light: #F5F5F5;
+  --select-gray: #5F5F5F;
+  --disabled-gray: #4E4E4E;
+  --blue: #021F4B;
+  --blue-mid: #002B6B;
+  --blue-midlight: #1141A0;
+  --blue-light: #E6E9F6;
+  --blue-softlight: #DADEEE;
+  --form-white: #F8F8FB;
+  --white: #fff;
+  --red: #f41414;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+// .select_container__WGoHl .select_menu__r82ep {
+//   position: relative !important;
+// }

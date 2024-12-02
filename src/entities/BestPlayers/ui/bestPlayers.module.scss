@@ -1,0 +1,130 @@
+.backgroundImage {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  object-fit: cover;
+  border-radius: 8px;
+  display: flex;
+  align-items: end;
+  padding-bottom: 56px;
+  padding-left: 18px;
+  padding: 0 20px 56px 18px;
+  background-repeat: no-repeat;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform .4s linear;
+  background-size: cover;
+
+  &:first-child {
+    transform: rotateY(0deg);
+  }
+
+  &:last-child {
+    transform: rotateY(180deg);
+  }
+}
+
+.playerCard {
+  border-radius: 8px;
+  height: 381px;
+  width: 308px;
+  position: relative;
+  cursor: pointer;
+}
+.name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: rgb(255, 255, 255) !important;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 25px !important;
+}
+.playerData {
+  width: 100%;
+}
+.position {
+  color: rgb(255, 255, 255) !important;
+  font-weight: 400 !important;
+}
+
+.playerCard:hover > .backgroundImage:first-child {
+  transform: rotateY(-180deg);
+}
+.playerCard:hover > .backgroundImage:last-child {
+  transform:  rotateY(0deg);
+}
+
+
+.players {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.tourDate {
+  font-weight: 400 !important;
+  color: #444444 !important;
+  margin-top: 24px !important;
+}
+
+.fourCards {
+  width: 308px;
+}
+.thereCards {
+  width: 416px;
+}
+.twoCards {
+  width: 632px;
+}
+@media (max-width: 820px) {
+  .players {
+    overflow-x: auto;
+    display: flex;
+    justify-content: start;
+    gap: 16px;
+    margin-top: 12px;
+    width: 100%;
+    padding-bottom: 12px;
+
+    &::-webkit-scrollbar {
+      max-height: 16px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--blue-light);
+      border-radius: 9px;
+      padding: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--blue-mid);
+      border-radius: 9px;
+      height: 8px;
+    }
+  }
+
+  .playerCard {
+    width: 155px;
+    height: 191px;
+  }
+  .backgroundImage {
+    padding-bottom: 27px;
+    padding-left: 9px;
+  }
+  .name {
+    font-size: 13px !important;
+  }
+  .position {
+    font-size: 10px !important;
+  }
+  .tourDate {
+    margin-top: 12px !important;
+    font-size: 13px !important;
+  }
+  .title {
+    font-size: 20px !important;
+  }
+}

@@ -1,0 +1,64 @@
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.winner {
+  padding: 32px 54px 0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  width: 413px;
+
+  &Logo {
+    width: 112px;
+    height: 112px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+
+  &Data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+.place {
+  text-align: center;
+}
+.captain {
+  font-size: 16px !important;
+}
+
+.firstPlace {
+  height: 437px;
+  background: linear-gradient(225deg, #E6CB87 20.83%, #FFEFAA 32.81%, #98843D 100%);
+  order: 2;
+}
+.secondPlace {
+  background: linear-gradient(225deg, #E7E7E7 20.83%, #FCFCFC 32.81%, #A5A293 100%);
+  height: 397px;
+  order: 1;
+}
+
+.thirdPlace {
+  height: 358px;
+  background: linear-gradient(225deg, #C78C43 0%, #E8C060 32.81%, #B38B51 100%);
+  order: 3;
+}

@@ -1,0 +1,19 @@
+.topContent {
+  display: flex;
+  align-items: center;
+  column-gap: 22px;
+}
+
+@media (max-width: 820px) {
+  .topContent {
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 23px;
+    column-gap: 0;
+
+    &>div {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}

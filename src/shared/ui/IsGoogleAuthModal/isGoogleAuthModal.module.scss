@@ -1,0 +1,60 @@
+.modalContainer {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 101;
+}
+
+.modalContent {
+  width: 450px;
+  position: absolute;
+  min-height: 100px;
+  background-color: var(--white);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalInfo {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.selectAnswerModal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modalUserContacts {
+  margin-top: 20px;
+}
+
+.sendButton {
+  background: #002B6B;
+  border-radius: 8px;
+  color: #fff;
+  margin-top: 20px;
+  height: 48px;
+  width: 100%;
+}
+
+.selectAnswerModal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+
+
+  &.selected {
+    background-color: #d4edda;
+  }
+}

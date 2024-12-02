@@ -1,0 +1,43 @@
+.filter_box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  & > div {
+    background-color: transparent !important;
+    border: none !important;
+
+    & input {
+      color: var(--select-gray) !important;
+      font-size: 20px !important;
+    }
+
+    & input::placeholder {
+      color: var(--select-gray) !important;
+      font-size: 20px !important;
+    }
+  }
+
+  .select, .title {
+    font-size: 20px;
+    font-style: normal;
+    line-height: 120%;
+  }
+
+
+  .title {
+    color: #181818;
+    font-weight: 600;
+  }
+
+  .select {
+    color: #9E9E9E;
+    font-weight: 400;
+    padding: 12px;
+    align-self: stretch;
+    border-bottom: 1px solid #E6E9F6;
+  }
+}
+
+
+

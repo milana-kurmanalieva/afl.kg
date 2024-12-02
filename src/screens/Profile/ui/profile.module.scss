@@ -1,0 +1,20 @@
+.profile {
+  display: flex;
+  column-gap: 24px;
+  align-items: flex-start;
+}
+
+.backArrow {
+  display: none;
+}
+
+@media (max-width: 820px) {
+  .backArrow {
+    display: inline-block;
+    padding: 16px 48px 16px 0;
+  }
+
+  .profile {
+    display: block;
+  }
+}

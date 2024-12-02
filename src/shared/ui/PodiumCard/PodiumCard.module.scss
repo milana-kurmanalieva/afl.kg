@@ -1,0 +1,60 @@
+.card {
+  width: 413px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 33px 0px 20px 0px;
+  > img {
+    width: 56px;
+    height: 72px;
+  }
+  > li {
+    width: 305px !important;
+    list-style: none;
+  }
+}
+
+
+
+.first_place {
+  height: 437px;
+  background: linear-gradient(225deg, #E6CB87 20.83%, #FFEFAA 32.81%, #98843D 100%);
+}
+.second_place {
+  height: 397px;
+  background: linear-gradient(225deg, #E7E7E7 20.83%, #FCFCFC 32.81%, #A5A293 100%);
+  order: -1;
+}
+.third_place {
+  height: 358px;
+  background: linear-gradient(225deg, #C78C43 0%, #E8C060 32.81%, #B38B51 100%);
+}
+
+
+
+
+@media (max-width: 820px) {
+  .card {
+    width: 100%;
+  }
+   .second_place {
+    order: 0;
+    height: 295px;
+   }
+   .first_place {
+    height: 297px;
+   }
+   .third_place {
+    height: 290px;
+   }
+   .podiumPlace {
+    > img {
+      margin-top: 12px;
+      width: 32px;
+      height: 42px;
+    }
+   }
+
+}

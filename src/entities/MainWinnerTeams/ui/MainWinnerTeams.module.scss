@@ -1,0 +1,22 @@
+.winnersTitle {
+  height: 56px;
+  background-color: var(--blue-light);
+  padding: 12px 0 16px 16px;
+  border-radius: 8px 8px 0 0;
+
+  h5 {
+    font-weight: 400 !important;
+  }
+}
+
+.winnersOfSeason {
+  margin-top: 50px;
+}
+
+.winners {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  gap: 16px;
+}
+

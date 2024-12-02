@@ -1,0 +1,11 @@
+.main {
+  width: 197px;
+  height: 129px;
+}
+
+@media (max-width: 820px) {
+  .main {
+    width: calc(50% - 7.5px);
+    height: 120px;
+  }
+}

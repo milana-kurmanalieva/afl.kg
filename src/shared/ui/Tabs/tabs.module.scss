@@ -1,0 +1,73 @@
+.tabs {
+  display: flex;
+  white-space: nowrap;
+}
+
+.tabs > button:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+.tabs > button:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.betweenTab {
+  border-radius: 0;
+}
+
+.videoGallery {
+  width: 127px !important;
+  padding: 12px 24px;
+}
+
+.tabsNewYork {
+  display: flex;
+  justify-content: space-between;
+  background-color: #E6E9F6;
+  gap: 7px;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.tabsVideo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tabsVideo > button {
+  border-radius: 0;
+}
+
+.tabsVideo > button:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+.tabsVideo > button:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+@media (max-width: 820px) {
+  .tabs > button {
+    font-size: 14px;
+    width: 50%;
+  }
+
+  .tabsVideo {
+    row-gap: 16px;
+  }
+
+  .tabsVideo > button {
+    width: 48%;
+
+    border-radius: 8px;
+  }
+
+  .tabsVideo > button:last-child {
+    border-radius: 8px;
+  }
+
+  .tabsVideo > button:first-child {
+    border-radius: 8px;
+  }
+}

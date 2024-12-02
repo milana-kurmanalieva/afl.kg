@@ -1,0 +1,26 @@
+.contacts {
+  max-width: 400px;
+  p {
+    margin-bottom: 8px;
+  }
+
+  button {
+    margin-top: 24px;
+  }
+
+  .contactsList {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+    li {
+      display: flex;
+      align-items: center;
+      column-gap: 24px;
+    }
+  }
+
+  .close {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,33 @@
+
+.swiperMain {
+  display: flex;
+}
+
+.mySwiper {
+  :global {
+    .swiper-wrapper {
+      height: 90px;
+    }
+
+    .swiper-slide {
+      height: 30px !important;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+    }
+
+    .swiper-slide-active {
+      width: auto !important;
+    }
+
+    .swiper-slide-shadow-top {
+      background-image: none !important;
+    }
+
+    .swiper-slide-shadow-bottom {
+      background-image: none !important;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.checkboxList {
+  display: flex;
+  width: 280px;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.checkboxInfo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.checkboxLabel {
+  width: 24px;
+  height: 24px;
+  font-size: 20px;
+  cursor: pointer;
+}

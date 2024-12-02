@@ -1,0 +1,96 @@
+.fieldImagesBox {
+}
+
+.mainImage {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+  aspect-ratio: 1.8;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 35.42%, rgba(0, 0, 0, 0.50) 68.23%), lightgray 50% / cover no-repeat;
+  &_img {
+    width: 100%;
+    aspect-ratio: 1.8;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+}
+
+.fieldImages {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .image {
+    position: relative;
+    cursor: pointer;
+    width: 160px;
+    aspect-ratio: 1.8;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 35.42%, rgba(0, 0, 0, 0.50) 68.23%), lightgray 50% / cover no-repeat;
+  }
+  &_img {
+    width: 100%;
+    aspect-ratio: 1.8;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+.swiper {
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width: 820px) {
+  .mainImage {
+    display: none;
+  }
+  .fieldImages {
+    display: none;
+  }
+  .image {
+    width: 100%;
+  }
+  .swiperSlide {
+    position: relative;
+    &_img {
+      width: 100%;
+      aspect-ratio: 1.8;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+
+  .count {
+    position: absolute;
+    z-index: 1111;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: rgba(24, 24, 24, 0.63);
+    color: var(--white);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .swiper {
+    color: var(--white);
+    font-size: 16px;
+    width: 100% !important;
+    aspect-ratio: 1.8;
+    border-radius: 12px;
+  }
+}
+
+

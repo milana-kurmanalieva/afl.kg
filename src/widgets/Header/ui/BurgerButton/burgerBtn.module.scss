@@ -1,0 +1,32 @@
+.burgerButton {
+  position: relative;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 101;
+
+  .line {
+    width: 28px;
+    height: 3px;
+    background-color: var(--black);
+    display: block;
+    margin: 4px auto;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &.isActive {
+    .line:nth-child(1) {
+      transform: translateY(10px) rotate(45deg);
+    }
+
+    .line:nth-child(2) {
+      opacity: 0;
+    }
+
+    .line:nth-child(3) {
+      transform: translateY(-4px) rotate(-45deg);
+    }
+  }
+}

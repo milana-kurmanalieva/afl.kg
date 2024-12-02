@@ -1,0 +1,19 @@
+.main {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
+  gap: 20px;
+  padding-bottom: 115px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 820px) {
+  .main {
+    gap: 16px;
+    padding-bottom: 58px;
+  }
+}

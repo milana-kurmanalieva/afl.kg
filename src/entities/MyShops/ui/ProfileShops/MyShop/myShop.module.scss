@@ -1,0 +1,150 @@
+.address {
+  cursor: pointer;
+
+  .btn {
+    padding: 4px 16px !important;
+  }
+
+  a {
+    color: var(--black);
+  }
+
+  .addressInfo {
+    display: flex;
+  }
+
+  .number {
+    width: 25px;
+    font-weight: 700;
+  }
+
+  .title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 24px;
+  }
+
+  button {
+    padding: 8px 16px !important;
+  }
+
+  .addressTitle {
+    display: flex;
+    column-gap: 24px;
+  }
+}
+
+.buttons {
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
+
+  button {
+    padding: 4px 8px !important;
+    margin-right: 0 !important;
+  }
+}
+
+.editLink {
+  text-decoration: underline;
+}
+
+.innerButton {
+  margin-right: 32px;
+}
+
+.fields {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  .number {
+    width: 175px;
+  }
+}
+
+.fieldInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: auto;
+}
+
+.fieldTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.addressName, .name {
+  width: 180px;
+}
+
+.modal {
+  overflow: hidden;
+
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 591px;
+  }
+}
+
+@media (max-width: 820px) {
+  .changeButton {
+    margin-right: 0;
+  }
+
+  .fields {
+    padding-left: 0;
+  }
+
+  .buttons {
+    margin-right: 0;
+  }
+
+  .addressName, .name {
+      width: auto;
+  }
+
+  .buttons {
+    column-gap: 12px;
+  }
+
+  .address {
+    font-size: 12px;
+
+    .btn {
+      padding: 4px 6px !important;
+      font-size: 12px !important;
+    }
+
+    .addressInfo {
+      flex-direction: column;
+      row-gap: 12px;
+    }
+
+    .number {
+      display: none;
+    }
+
+    .name {
+      font-weight: 500;
+    }
+
+    .title {
+      display: flex;
+      column-gap: 12px;
+      flex-wrap: wrap;
+    }
+  }
+
+  .fields {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,26 @@
+.loader {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.match {
+  margin-top: 40px;
+
+  @media (max-width: 820px) {
+    margin-top: 20px;
+  }
+}
+
+.additionalInfo {
+  margin-top: 80px;
+
+  h4 {
+    margin-bottom: 4px;
+  }
+}
+
+.title {
+  font-size: 31px !important;
+}

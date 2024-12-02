@@ -1,0 +1,40 @@
+.menu {
+  background-color: #fff;
+  position: absolute;
+  min-width: 285px;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.link {
+  display: block;
+  margin-left: 16px;
+  margin-bottom: 20px;
+  color: var(--select-gray);
+  font-size: 20px;
+}
+
+@media (max-width: 820px) {
+  .menu {
+    border-radius: 0 0 0 8px;
+    padding: 58px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .authButton {
+    padding: 8px;
+    width: 100%;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .profileButton {
+    width: 100%;
+  }
+}

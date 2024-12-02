@@ -1,0 +1,190 @@
+.bookingModalContainer {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 101;
+}
+
+.bookingModalContent {
+  width: 760px;
+  position: absolute;
+  min-height: 180px;
+  background-color: var(--white);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
+  max-height: 90vh;
+  overflow: auto;
+  & p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-wrap: wrap;
+  }
+}
+
+.clientInfo {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.clientName {
+  display: flex;
+  gap: 24px;
+}
+
+.clientNameInput {
+  width: 100%;
+}
+
+.timeBlock {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.timeSelect {
+  display: flex;
+  gap: 24px;
+  > div {
+    width: 140px;
+  }
+}
+
+.timePickerSelect {
+  display: flex;
+}
+
+.modalActionBlock {
+  display: flex;
+  flex: 1;
+  gap: 32px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.allTimeSelect {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.timeNameSelect {
+  display: flex;
+  justify-content: space-around;
+}
+
+.startTimeNameSelect {
+  height: 40px;
+  border-radius: 8px;
+  background: #f8f8fb;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.timeSelect {
+  display: flex;
+  gap: 20px;
+}
+
+.timeBlockName {
+  margin-top: 40px;
+}
+
+.repeatEvent {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.repeatTitle {
+  width: 120px;
+}
+
+.checkboxList {
+  display: flex;
+  width: 380px;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.checkboxInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.checkboxLabel {
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.counter {
+  padding: 6px 12px;
+  font-size: 24px;
+  border-radius: 4px;
+}
+
+
+.startTimeSelect {
+  text-align: center;
+}
+
+.weekCount {
+  width: 30px;
+  text-align: center;
+}
+
+@media (max-width: 820px) {
+  .bookingModalContent {
+    width: 100%;
+    padding: 16px;
+    max-height: 70vh;
+
+    .startTimeNameSelect, p {
+      font-size: 14px;
+    }
+  }
+
+  .clientName {
+    flex-direction: column;
+    row-gap: 8px;
+  }
+
+  .timeBlock {
+    flex-direction: column;
+    width: 100%;
+    row-gap: 8px;
+  }
+
+  .allTimeSelect {
+    justify-content: space-between;
+  }
+
+  .timeSelect {
+    justify-content: space-around;
+  }
+
+  .repeatEvent {
+    margin-top: 20px;
+  }
+
+  .weekCount {
+    margin: 0 12px;
+  }
+}

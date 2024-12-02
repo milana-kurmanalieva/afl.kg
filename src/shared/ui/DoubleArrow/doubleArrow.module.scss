@@ -1,0 +1,9 @@
+.left,
+.right {
+  display: inline-block;
+  transition: transform .3s ease;
+}
+
+.right {
+  transform: rotate(-180deg);
+}

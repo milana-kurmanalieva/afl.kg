@@ -1,0 +1,11 @@
+.langComp {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  width: 100px;
+  padding-left: 2.5px;
+
+  > img {
+    margin-right: 5px;
+  }
+}

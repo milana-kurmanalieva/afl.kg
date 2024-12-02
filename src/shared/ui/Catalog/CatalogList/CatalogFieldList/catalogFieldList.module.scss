@@ -1,0 +1,17 @@
+.catalogListWrapper > h4 {
+  margin-bottom: 20px !important;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width:820px) {
+
+  .list {
+    gap: 0;
+    row-gap: 20px;
+  }
+}

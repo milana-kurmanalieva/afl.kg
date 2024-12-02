@@ -1,0 +1,29 @@
+.largeContainer,
+.midContainer,
+.smallContainer {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.largeContainer {
+  max-width: 1276px;
+}
+
+.midContainer {
+  max-width: 1044px;
+}
+
+.smallContainer {
+  max-width: 926px;
+}
+
+
+@media (max-width: 820px) {
+
+  .largeContainer,
+  .midContainer,
+  .smallContainer {
+    padding: 0 16px;
+  }
+}

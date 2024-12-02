@@ -1,0 +1,110 @@
+.player {
+  position: relative;
+  padding: 8px 12px;
+  border-radius: 8px;
+  max-width: 196px;
+  height: 264px;
+  cursor: pointer;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex: 1 170px;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgb(0 0 0 / 0%) 55.21%, rgb(0 0 0 / 40%) 80.21%);
+  }
+
+  img {
+    object-fit: cover;
+    filter: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 55.21%, rgba(0, 0, 0, 0.40) 80.21%);
+    transition: .3s ease-in-out;
+  }
+
+  .showPosition {
+    font-size: 14px;
+    line-height: 150%;
+    visibility: hidden;
+    height: 0;
+    width: fit-content;
+    transition: .3s ease;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+
+    .showPosition {
+      visibility: visible;
+      max-height: fit-content;
+      height: 22px;
+      transition: .3s ease-in-out;
+    }
+  }
+
+  h4 {
+    font-size: 16px;
+    color: var(--white);
+    position: relative;
+    z-index: 2;
+    margin-bottom: 6px;
+  }
+
+
+  p {
+    font-size: 13px;
+    color: var(--white);
+    position: relative;
+    z-index: 2;
+  }
+
+  .teamLogo {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+}
+
+.playerImage {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.firstName {
+  font-size: 16px !important;
+}
+
+.OptionalPart {
+  line-height: 20px;
+}
+
+.cursorInitial {
+  cursor: initial;
+}
+
+@media (max-width: 820px) {
+  .player {
+    width: calc(50% - 10px);
+    flex: 1 130px;
+    padding: 8px;
+    height: 205px;
+    margin: 0;
+  }
+}

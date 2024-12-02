@@ -1,0 +1,62 @@
+.fieldInfo {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+.backIcon {
+  rotate: 90deg;
+  margin: 6px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  display: none;
+}
+.titleMobile {
+  display: none;
+}
+
+.calendar {
+  width: 66%;
+}
+
+.calendarContent {
+  margin-top: 40px;
+}
+
+.fieldName {
+  color: #002B6B;
+}
+
+@media (max-width: 820px) {
+  .fieldInfo {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .title {
+    display: none;
+  }
+  .icon {
+    display: block;
+  }
+  .arrow{
+    margin-bottom: 16px;
+    color: #000;
+  }
+  .titleMobile {
+    display: block;
+    color: var(--black);
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin-top: 24px;
+  }
+
+  .calendar {
+    width: 100%;
+  }
+}

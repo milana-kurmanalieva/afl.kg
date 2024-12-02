@@ -1,0 +1,48 @@
+@font-face {
+  font-family: Monserrat;
+  font-weight: 400;
+  font-style: normal;
+  src: local(''),
+    url('../../shared/assets/fonts/Monserrat/ttf/Montserrat-Regular.ttf') format('ttf'),
+    url('../../shared/assets/fonts/Monserrat/woff2/Montserrat-Regular.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: Monserrat;
+  font-weight: 500;
+  font-style: normal;
+  src: local(''),
+    url('../../shared/assets/fonts/Monserrat/ttf/Montserrat-Medium.ttf') format('ttf'),
+    url('../../shared/assets/fonts/Monserrat/woff2/Montserrat-Medium.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: Monserrat;
+  font-weight: 600;
+  font-style: normal;
+  src: local(''),
+    url('../../shared/assets/fonts/Monserrat/ttf/Montserrat-SemiBold.ttf') format('ttf'),
+    url('../../shared/assets/fonts/Monserrat/woff2/Montserrat-SemiBold.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: Monserrat;
+  font-weight: 700;
+  font-style: normal;
+  src: local(''),
+    url('../../shared/assets/fonts/Monserrat/ttf/Montserrat-Bold.ttf') format('ttf'),
+    url('../../shared/assets/fonts/Monserrat/woff2/Montserrat-Bold.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: Monserrat;
+  font-weight: 800;
+  font-style: normal;
+  src: local(''),
+    url('../../shared/assets/fonts/Monserrat/ttf/Montserrat-ExtraBold.ttf') format('ttf'),
+    url('../../shared/assets/fonts/Monserrat/woff2/Montserrat-ExtraBold.woff2') format('woff2'),
+}
+
+body {
+  font-family: Monserrat, sans-serif;
+}
